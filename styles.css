@@ -1,0 +1,126 @@
+:root {
+    --darkblue: #45838e;
+    --lightblue: #b2d9e0;
+    --lightorange: #eb9f84;
+}
+
+@font-face {
+    font-family: Wakile;
+    src:url(fonts/wakile.otf);
+    /* TO IMPORT WAKILE, Glacial Indifference, and Higuen later*/
+}
+
+@font-face {
+    font-family: GlacialIndifference;
+    src:url(fonts/GlacialIndifference-Regular.otf);
+}
+
+@font-face { 
+    font-family: HiguenSerif;
+    src:url(fonts/HiguenSerif.otf);
+}
+
+body {
+    background-color: var(--lightblue);
+}
+
+
+/* NAVBAR */
+
+nav {
+    display: flex; 
+    justify-content: flex-end;
+}
+
+nav a {
+    font-family: HiguenSerif, serif;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: var(--darkblue); 
+}
+
+nav a:hover {
+    color: var(--lightorange);
+}
+
+/* HOME */
+#landing {
+    height: 100vh;
+}
+
+#name-container {
+    margin-left: 40px;
+}
+
+.name {
+    font-size: 13vw;
+    margin: 0px;
+    color: var(--darkblue);
+    font-family: Wakile;
+    font-weight: 100;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start;  
+    height: 100%;
+    align-items: center;
+    gap: 35px;
+} 
+
+#dani-descr {
+    color: var(--darkblue);
+    font-family: GlacialIndifference, sans-serif; 
+    font-size: 2.8rem;
+    margin: 0px;
+    font-weight: 100;
+    
+}
+
+.home-btn { 
+    margin-left: 40px;
+    font-family: HiguenSerif, serif;
+    font-size: 2rem; 
+    border-radius: 500px;
+    padding: 20px 30px;
+}
+.contact-btn {
+    background-color: var(--lightblue);
+    border: 3px solid var(--darkblue);
+    color: var(--darkblue);
+}
+
+.resume-btn {
+    background-color: var(--darkblue);
+    color: white; 
+    border: 0px;
+}
+
+/* mobile phones*/
+@media (max-width: 480px) {
+    /* TODO: have a hamburger icon  */
+
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }   
+}
+
+/* ABOUT */ 
+#about {
+    height: 100vh;
+    background-color: lightcoral;
+}
+
+/* WORK */
+#work {
+    height: 100vh;
+}
+
+/* CONTACT ME */
+#contact {
+    height: 100vh;
+}
