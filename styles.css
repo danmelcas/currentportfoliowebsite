@@ -177,7 +177,8 @@ hr {
 
     #hamburger {
         display: block;
-        margin-right: 10vw;
+        margin-top: 1vh;
+        margin-right: 5vw;
     }
     
     #buttons-container { 
